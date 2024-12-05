@@ -16,9 +16,9 @@ export class PostsService {
     return await this.postRepository.save(newPost);
   }
 
-  // findAll() {
-  //   return `This action returns all posts`;
-  // }
+  async findAll(): Promise<Post[]> {
+    return await this.postRepository.find();
+  }
 
   // findOne(id: number) {
   //   return `This action returns a #${id} post`;
