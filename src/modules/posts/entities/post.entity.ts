@@ -3,7 +3,9 @@ import {
   PrimaryGeneratedColumn,
   Column,
   CreateDateColumn,
+  OneToMany,
 } from 'typeorm';
+import { Comment } from '@modules/comments';
 
 @Entity()
 export class Post {
@@ -21,4 +23,7 @@ export class Post {
 
   @CreateDateColumn()
   createdAt: string;
+
+  @OneToMany(() => Comment, (comment) => comment.post)
+  comments: Comment[];
 }
