@@ -5,7 +5,7 @@ import {
   CreateDateColumn,
   OneToMany,
 } from 'typeorm';
-import { Comment } from '@modules/comments';
+import { Comment } from '../../comments/entities/comment.entity';
 
 @Entity()
 export class Post {
