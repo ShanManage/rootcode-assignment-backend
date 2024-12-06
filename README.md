@@ -1,4 +1,4 @@
-# SIMPLEBOOKS-ASSIGNMENT-FRONTEND
+# ROOTCODE-ASSIGNMENT-BACKEND
 This repository contains the source code relates to simplebooks take home assignment (Back-End). 
 
 This is a [Node.js](https://nodejs.org/en) project.
